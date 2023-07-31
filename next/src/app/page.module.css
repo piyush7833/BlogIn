@@ -20,15 +20,7 @@ background:linear-gradient(to bottom, #194c33 ,#bbb);
 .desc{
 
 }
-.btn{
-  padding: 2vh;
-  background-color: #53c28b;
-  border: none;
-  border-radius: 1.1rem;
-  cursor: pointer;
-  width: max-content;
-  color: white;
-}
+
 .imgContainer{
 flex: 1;
 }
