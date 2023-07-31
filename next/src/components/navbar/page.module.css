@@ -1,0 +1,33 @@
+.container{
+    color:rgb(174, 172, 172);
+    height: 8vh;
+    background-color: rgb(24, 23, 23);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.3rem;
+}
+.logo{
+    width: 50%;
+    display: flex;
+    margin-left: 4vw;
+    font-weight: bold;
+    font-size: larger;
+}
+.links{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 1vh 1vw;
+    border-radius: 1.3rem;
+    margin-right: 4vw;
+    background-color: #53c28b;
+    color: white;
+    cursor: pointer;
+}
