@@ -1,3 +1,50 @@
-.container{
-    color:red;
+.container {
+    gap: 2vh;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    gap: 2vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imgContainer {
+    flex: 1;
+    position: relative;
+    height: 60vh;
+}
+.img{
+    object-fit: contain;
+    animation: move 3s infinite ease-in-out alternate;
+}
+@keyframes move{
+    from {
+        transform: translateY(-15px);
+    }
+    to {
+        transform: translateY(0px) scale(1.03);
+    }
+}
+.inputContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.input, .textarea{
+    padding: 2%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #bbb;
+    border: 3px solid #bbb;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
