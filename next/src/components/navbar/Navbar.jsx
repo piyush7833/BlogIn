@@ -1,7 +1,10 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
+import ThemeBtn from '../themeBtn/themeBtn'
 import styles from './page.module.css'
+import { useContext } from 'react'
+import { ThemeContext } from '../../../context/themeContext/ThemeContext'
 const Navbar = () => {
   const links=[
     {
@@ -35,10 +38,12 @@ const Navbar = () => {
       url:'/dashboard'
     }
   ]
+  const { toggle,mode } = useContext(ThemeContext);
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={mode==="light"?{background:"#f5f5f4",color:"black"}:{backgroundColor: "rgb(24, 23, 23)",color:"white"}}>
       <Link href={'/'} className={styles.logo} >BlogIn</Link>
       <div className={styles.links}>
+        <ThemeBtn/>
         {links.map((link)=>(
           <Link key={link.id} href={link.url}>{link.title}</Link>
         ))}

@@ -1,7 +1,7 @@
 .container{
     color:rgb(174, 172, 172);
     height: 8vh;
-    background-color: rgb(24, 23, 23);
+    
     display: flex;
     justify-content: space-between;
     align-items: center;

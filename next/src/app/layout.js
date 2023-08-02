@@ -2,7 +2,7 @@ import Navbar from '@/components/navbar/Navbar'
 import './globals.css'
 import { Inter, Roboto } from 'next/font/google'  //can directly include google fonts
 import Footer from '@/components/footer/Footer'
-
+import { ThemeProvider } from '../../context/themeContext/ThemeContext'
 
 //by default all component render on server side
 //to use client side rendering we can use "use Client"
@@ -17,11 +17,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* Now we can use mode at any page/component */}
+      <ThemeProvider>  
       <div className='container'>
         <Navbar/>
         {children}
         <Footer/>
       </div>
+      </ThemeProvider>
         </body>
     </html>
   )
