@@ -4,7 +4,7 @@ import styles from './page.module.css'
 const BlogLayout = ({children}) => {
   return (
     <div className={styles.container}>
-      <h1>This is blog layout</h1>  
+      {/* <h1>This is blog layout</h1>   */}
       {children}
     </div>
   )
