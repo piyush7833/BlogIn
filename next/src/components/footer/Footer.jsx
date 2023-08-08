@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
 import { useContext } from 'react' 
-import { ThemeContext } from '../../../context/themeContext/ThemeContext'
+import { ThemeContext } from '@/context/themeContext/ThemeContext'
 const Footer = () => {
   const { toggle,mode } = useContext(ThemeContext);
   return (

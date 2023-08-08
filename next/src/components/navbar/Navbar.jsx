@@ -4,8 +4,10 @@ import React from 'react'
 import ThemeBtn from '../themeBtn/themeBtn'
 import styles from './page.module.css'
 import { useContext } from 'react'
-import { ThemeContext } from '../../../context/themeContext/ThemeContext'
+import { ThemeContext } from '@/context/themeContext/ThemeContext'
+import { signOut, useSession } from 'next-auth/react'
 const Navbar = () => {
+  const session=useSession();
   const links=[
     {
       id:1,
@@ -47,7 +49,7 @@ const Navbar = () => {
         {links.map((link)=>(
           <Link key={link.id} href={link.url}>{link.title}</Link>
         ))}
-      <button className={styles.btn}>Logout</button>
+      {session.status==="authenticated"?<button className={styles.btn} onClick={signOut}>Logout</button>:""}
       </div>
     </div>
   )

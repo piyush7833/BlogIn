@@ -32,3 +32,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+
+<!-- if data never changes then we use static fetching using cahe:force-cache , if our data changes but not too frequenty then we use revalidate by which our data revalidate after given time, if our data changes too often then we use dynamic fetching by using cache:'no-store -->

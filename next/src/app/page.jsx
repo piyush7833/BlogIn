@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Hero from '../../public/hero.png' //if we import images like this then we need not to give height and width    //by default next js not support any external domain acess we need to configure it
-import Btn from '@/components/btn/Btn'
+import Btn from '../components/btn/Btn'
 
 export default function Home() {
   return (

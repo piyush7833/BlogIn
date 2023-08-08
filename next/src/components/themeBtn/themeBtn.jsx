@@ -2,7 +2,8 @@
 
 import React, { useContext } from "react";
 import styles from "./themeBtn.module.css";
-import { ThemeContext } from '../../../context/themeContext/ThemeContext'
+import { ThemeContext } from '@/context/themeContext/ThemeContext'
+
 
 const ThemeBtn = () => {
   const { toggle,mode } = useContext(ThemeContext);

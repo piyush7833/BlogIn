@@ -2,6 +2,10 @@ import React from 'react'
 import styles from './page.module.css'
 import Btn from '@/components/btn/Btn'
 import Image from 'next/image'
+export const metadata = {
+  title: 'BlogIn | Contacts',
+  description: 'This is th description',
+}
 const Contacts = () => {
   return (
     <div className={styles.container}>
